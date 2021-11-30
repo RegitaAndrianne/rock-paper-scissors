@@ -65,6 +65,11 @@ h3 {
     object-fit: contain;
 }
 
+.round-list {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 100%!important;
+}
 
 /* --------------PAGE3 - GAME FEATURES------------------ */
 .page3 {
