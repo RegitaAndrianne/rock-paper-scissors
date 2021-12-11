@@ -30,7 +30,7 @@
             </div>
 
             <!-- ROW-2 -->
-            <div class="row text-content text-black m-5">
+            <div class="row text-content text-black m-2">
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <p>PLAYER 1</p>
@@ -43,55 +43,57 @@
             </div>
 
             <!-- ROW-3 -->
-            <div class="row m-5 p-2">
+            <div class="row m-2 p-2">
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
+        
                     <!-- PLAYER 1 -->
-                    <img src="assets/html2-rock.png">
-                    <img src="/assets/html2-bgOption.png" class="choose-player">
+                    <div id="bgRockPlayer" class="d-flex align-items-center justify-content-center">
+                        <img id="rockPlayer" src="assets/html2-rock.png" onclick="chooseRock()" >
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <!-- PLAYER COM -->
-                    <img src="/assets/html2-rock.png">
-                    <img src="/assets/html2-bgOption.png" class="choose-player">
+                    <img id="rockCom" src="/assets/html2-rock.png">
                 </div>
                 <div class="col d-flex justify-content-center"></div>
             </div>
 
             <!-- ROW-4 -->
-            <div class="row m-5 p-2">
+            <div class="row m-2 p-2">
                 <div class="col d-flex justify-content-center align-items-center"></div>
                 <div class="col d-flex justify-content-center align-items-center align-items-center">
                     <!-- PLAYER 1 -->
-                    <img src="assets/html2-paper.png">
-                    <img src="/assets/html2-bgOption.png" class="choose-player">
+                    <div id="bgPaperPlayer" class="d-flex align-items-center justify-content-center">
+                        <img id="paperPlayer" src="assets/html2-paper.png" onclick="choosePaper();">
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center align-items-center">
-                    <!-- <p class="main-text">VS</p> -->
-                    <img src="assets/html2-VS.png">
+                    <div style="height: 10vh;">
+                        <img id="bgResult" src="assets/html2-VS.png" class="vs">
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center align-items-center">
                     <!-- PLAYER COM -->
-                    <img src="/assets/html2-paper.png">
-                    <img src="/assets/html2-bgOption.png" class="choose-player">
+                    <img id="paperCom" src="/assets/html2-paper.png">
                 </div>
                 <div class="col d-flex justify-content-center align-items-center"></div>
             </div>
 
             <!-- ROW-5 -->
-            <div class="row m-5 p-2">
+            <div class="row m-2 p-2">
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <!-- PLAYER 1 -->
-                    <img src="assets/html2-scissors.png">
-                    <img src="/assets/html2-bgOption.png" class="choose-player">
+                    <div id="bgScissorsPlayer" class="d-flex align-items-center justify-content-center">
+                        <img id="scissorsPlayer" src="assets/html2-scissors.png" onclick="chooseScissors()">
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <!-- PLAYER COM -->
-                    <img src="/assets/html2-scissors.png">
-                    <img src="/assets/html2-bgOption.png" class="choose-player">
+                    <img id="scissorsCom" src="/assets/html2-scissors.png">
                 </div>
                 <div class="col d-flex justify-content-center"></div>
             </div>
@@ -101,12 +103,13 @@
                 <div class="col"></div>
                 <div class="col"></div>
                 <div class="col d-flex justify-content-center">
-                    <img src="/assets/html2-refresh.png">
+                    <img id="refresh" src="/assets/html2-refresh.png" onclick="refreshPage()">
                 </div>
                 <div class="col"></div>
                 <div class="col"></div>
             </div>
         </div>
     </div>
+    <script src="/javascript2.js"></script>
 </body>
 </html>

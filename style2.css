@@ -11,7 +11,7 @@ html, body {
     background-image: url("/assets/html2-bg.png");
     background-size: 100% 100%;
     object-fit: contain;
-    height: 800px;
+    height: 720px;
 }
 
 .text-content {
@@ -22,24 +22,40 @@ html, body {
     line-height: 49px;
 }
 
-.main-text {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 124px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #BD0000;
-}
-
-img {
-    z-index: 2;
+#rockPlayer, #paperPlayer, #scissorsPlayer, #rockCom, #paperCom, #scissorsCom{
     height: 10vh;
 }
 
-.choose-player {
-    position: absolute;
-    z-index: 1;
+#bgRockPlayer, #bgPaperPlayer, #bgScissorsPlayer{
+    height: 15vh;
+    width: 18vh;
+}
+
+#bgRockPlayer:hover, #bgPaperPlayer:hover, #bgScissorsPlayer:hover{
+    background-color: #C4C4C4;
+    border-radius: 10px;
+}
+
+.bgAbu{
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    height: 15vh;
+    width: 18vh;
+}
+
+.vs{
     height: 15vh;
 }
+
+.bgDraw{
+    position: relative;
+    height: 20vh;
+    width: 25vh;
+}
+
+#refresh:hover{
+    height: 7vh;
+    transform: rotate(180deg)
+}
+
+
