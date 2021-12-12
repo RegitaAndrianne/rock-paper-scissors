@@ -19,7 +19,7 @@
     <div class="main-page">
         <div class="container"">
             <!-- ROW-1 -->
-            <div class="row pt-2">
+            <div class="row">
                 <nav>
                     <a href="/index.html">
                         <img class="nav-link d-inline" src="/assets/html2-backButton.png">
@@ -30,9 +30,9 @@
             </div>
 
             <!-- ROW-2 -->
-            <div class="row text-content text-black m-2">
+            <div class="row text-content text-black">
                 <div class="col d-flex justify-content-center"></div>
-                <div class="col d-flex justify-content-center align-items-center">
+                <div class="col d-flex justify-content-center">
                     <p>PLAYER 1</p>
                 </div>
                 <div class="col d-flex justify-content-center"></div>
@@ -43,25 +43,27 @@
             </div>
 
             <!-- ROW-3 -->
-            <div class="row m-2 p-2">
+            <div class="row mt-1">
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
         
                     <!-- PLAYER 1 -->
                     <div id="bgRockPlayer" class="d-flex align-items-center justify-content-center">
-                        <img id="rockPlayer" src="assets/html2-rock.png" onclick="chooseRock()" >
+                        <img id="rockPlayer" src="assets/html2-rock.png" onclick="chooseRock()">
                     </div>
                 </div>
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <!-- PLAYER COM -->
-                    <img id="rockCom" src="/assets/html2-rock.png">
+                    <div id="bgRockCom" class="d-flex align-items-center justify-content-center">
+                        <img id="rockCom" src="/assets/html2-rock.png">
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center"></div>
             </div>
 
             <!-- ROW-4 -->
-            <div class="row m-2 p-2">
+            <div class="row mt-1">
                 <div class="col d-flex justify-content-center align-items-center"></div>
                 <div class="col d-flex justify-content-center align-items-center align-items-center">
                     <!-- PLAYER 1 -->
@@ -70,19 +72,19 @@
                     </div>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center align-items-center">
-                    <div style="height: 10vh;">
-                        <img id="bgResult" src="assets/html2-VS.png" class="vs">
-                    </div>
+                    <img id="versus" src="assets/html2-VS.png">
                 </div>
                 <div class="col d-flex justify-content-center align-items-center align-items-center">
                     <!-- PLAYER COM -->
-                    <img id="paperCom" src="/assets/html2-paper.png">
+                    <div id="bgPaperCom" class="d-flex align-items-center justify-content-center">
+                        <img id="paperCom" src="/assets/html2-paper.png">
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center"></div>
             </div>
 
             <!-- ROW-5 -->
-            <div class="row m-2 p-2">
+            <div class="row mt-1">
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <!-- PLAYER 1 -->
@@ -93,13 +95,15 @@
                 <div class="col d-flex justify-content-center"></div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <!-- PLAYER COM -->
-                    <img id="scissorsCom" src="/assets/html2-scissors.png">
+                    <div id="bgScissorsCom" class="d-flex align-items-center justify-content-center">
+                        <img id="scissorsCom" src="/assets/html2-scissors.png">
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-center"></div>
             </div>
 
             <!-- ROW-6 -->
-            <div class="row m-2">
+            <div class="row m-1">
                 <div class="col"></div>
                 <div class="col"></div>
                 <div class="col d-flex justify-content-center">

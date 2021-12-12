@@ -1,27 +1,28 @@
 /**
  * SELECTOR
  */
+
 const rockPlayer = document.getElementById("rockPlayer")
 const paperPlayer = document.getElementById("paperPlayer")
 const scissorsPlayer = document.getElementById("scissorsPlayer")
 
 
 function chooseRock(){
-    rockPlayer.classList.add("bgAbu")
+    document.getElementById("bgRockPlayer").classList.add("bgAbu")
     choosePlayer("rock")
     paperPlayer.removeAttribute("onclick")
     scissorsPlayer.removeAttribute("onclick")
 }
 
 function choosePaper(){
-    paperPlayer.classList.add("bgAbu")
+    document.getElementById("bgPaperPlayer").classList.add("bgAbu")
     choosePlayer("paper")
     rockPlayer.removeAttribute("onclick")
     scissorsPlayer.removeAttribute("onclick")
 }
 
 function chooseScissors(){
-    scissorsPlayer.classList.add("bgAbu")
+    document.getElementById("bgScissorsPlayer").classList.add("bgAbu")
     choosePlayer("scissors")
     rockPlayer.removeAttribute("onclick")
     paperPlayer.removeAttribute("onclick")
@@ -29,17 +30,16 @@ function chooseScissors(){
 
 function choosePlayer(choose){
     if (choose === "rock"){
-        chooseCom(randomComPlayer)
-        gamePlay(choose,randomComPlayer)
+        chooseCom(randomComPlayer);
+        gamePlay(choose,randomComPlayer);
      
     } else if (choose === "paper"){
-        chooseCom(randomComPlayer)
-        gamePlay(choose,randomComPlayer)
+        chooseCom(randomComPlayer);
+        gamePlay(choose,randomComPlayer);
 
     } else if (choose === "scissors"){
-        chooseCom(randomComPlayer)
-        gamePlay(choose,randomComPlayer)
-
+        chooseCom(randomComPlayer);
+        gamePlay(choose,randomComPlayer);
     }
 }
 
@@ -53,34 +53,31 @@ const randomComPlayer = comPlayer[Math.floor(Math.random()*comPlayer.length)]
 
 function chooseCom(choose2){
     if (choose2 === 'rock'){
-        rockCom.classList.add("bgAbu")
-        // rockCom.style.height = "10vh"
+        document.getElementById("bgRockCom").classList.add("bgAbu")
     } else if (choose2 === 'paper') {
-        paperCom.classList.add("bgAbu")
-        // paperCom.style.height = "10vh"
+        document.getElementById("bgPaperCom").classList.add("bgAbu")
     } else if (choose2 === 'scissors') {
-        scissorsCom.classList.add("bgAbu")
-        // scissorsCom.style.height = "10vh"
+        document.getElementById("bgScissorsCom").classList.add("bgAbu")
     }
 }
 
-let bgDraw = document.getElementById("bgResult")
+let bgVersus = document.getElementById("versus")
 
 const gamePlay = (player1,player2) => {
     let cekPlayer = player1+player2
     console.log(cekPlayer)
     if (cekPlayer === "rockrock" || cekPlayer === "paperpaper" || cekPlayer === "scissorsscissors"){
         console.log("draw")
-        bgDraw.src='assets/html2-bg-draw.png'
-        bgDraw.classList.add("bgDraw")
+        bgVersus.src='assets/html2-bg-draw.png'
+        bgVersus.classList.add("setImgVs")
     } else if (cekPlayer === "rockscissors" || cekPlayer === "paperrock" || cekPlayer === "scissorspaper"){
         console.log("player 1 win")
-        bgDraw.src='assets/html2-bgPlayer1Win.png'
-        bgDraw.classList.add("bgDraw")
+        bgVersus.src='assets/html2-bgPlayer1Win.png'
+        bgVersus.classList.add("setImgVs")
     } else if (cekPlayer === "rockpaper" || cekPlayer === "paperscissors" || cekPlayer === "scissorsrock"){
         console.log("COM win")
-        bgDraw.src='assets/html2-bgComWin.png'
-        bgDraw.classList.add("bgDraw")
+        bgVersus.src='assets/html2-bgComWin.png'
+        bgVersus.classList.add("setImgVs")
     }
 }
 

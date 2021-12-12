@@ -22,40 +22,42 @@ html, body {
     line-height: 49px;
 }
 
-#rockPlayer, #paperPlayer, #scissorsPlayer, #rockCom, #paperCom, #scissorsCom{
-    height: 10vh;
+.row {
+    height: 15vh;
 }
 
-#bgRockPlayer, #bgPaperPlayer, #bgScissorsPlayer{
-    height: 15vh;
-    width: 18vh;
+#rockPlayer, #paperPlayer, #scissorsPlayer, #rockCom, #paperCom, #scissorsCom{
+    height: 10vh;
+    width: 10vh;
 }
 
 #bgRockPlayer:hover, #bgPaperPlayer:hover, #bgScissorsPlayer:hover{
-    background-color: #C4C4C4;
-    border-radius: 10px;
-}
-
-.bgAbu{
+    position: absolute;
     background-color: #C4C4C4;
     border-radius: 10px;
     height: 15vh;
     width: 18vh;
 }
 
-.vs{
+.bgAbu{
+    position: absolute;
+    background-color: #C4C4C4;
+    border-radius: 10px;
     height: 15vh;
+    width: 18vh;
 }
 
-.bgDraw{
-    position: relative;
-    height: 20vh;
-    width: 25vh;
-}
-
-#refresh:hover{
+#refresh{
     height: 7vh;
     transform: rotate(180deg)
 }
+
+.setImgVs{
+    position: absolute;
+    height: 150px;
+    width: 200px;
+}
+
+
 
 
